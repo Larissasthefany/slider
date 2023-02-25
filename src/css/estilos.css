@@ -23,19 +23,19 @@
 }
 
 .slide-rosa{
-    background-image: url(../imagens/flores-rosas.jpg);
+    background-image: url(../imagens/street.jpg);
 }
 
 .slide-verde{
-    background-image: url(../imagens/flores-verdes.jpg);
+    background-image: url(../imagens/et.jpg);
 }
 
 .slide-laranja{
-    background-image: url(../imagens/montanhas.jpg);
+    background-image: url(../imagens/neblina.jpg);
 }
 
 .slide-azul{
-    background-image: url(../imagens/lago.jpg);
+    background-image: url(../imagens/fogos.jpg);
 }
 
 .seta-voltar, .seta-avancar{
@@ -64,11 +64,16 @@
 
 .conteudo{
     display: block;
-    background-color: #fff;
     margin-left: 180px;
     padding: 65px 60px;
     width: 620px;
     border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .conteudo .titulo{
@@ -102,4 +107,16 @@
 
 .botao.azul{
     color: #10acdd;
+}
+
+@media screen and (max-width:750px) {
+    .conteudo{
+        display: none;
+    }
+
+    .seta-voltar .imagens-seta, .seta-avancar .imagens-seta{
+        width: 30px;
+        height: 30px;
+    }
+    
 }
